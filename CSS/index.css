@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap');
+
+* {
+    background-color: #1c1e21;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+/*navbar*/
+
+.nav {
+    font-size: 2rem;
+    padding: 1%;
+    color:  #ecf0f1;
+    text-transform: uppercase;
+    transition: 0.5s;
+    display: inline;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav:after {
+    position: absolute;
+    content: "";
+    background: white;
+    transition: transform 0.2s;
+    transform: scaleX(0);
+    transform-origin: right;
+    width: 100%;
+    height: 3px;
+    top: 100%;
+    left: 0;
+} 
+
+.nav:hover {
+    color: white;
+    text-shadow: 0 0 50px white;
+}
+
+.nav:hover:after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.main-header{
+    text-align: center;
+    color: #fee;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    text-shadow: 0 0 30px rgba(104, 5, 38, 0.6),
+        0 0 60px rgba(255,0,84,0.4),
+        0 0 100px rgba(233, 88, 137, 0.2),
+        0 0 90px rgba(255,0,84,0.1);
+    font-size: 4rem;
+}
+
+#logo {
+    width: 25vh;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    animation: bounceInDown;
+    animation-duration: 2s;
+}
+
+.about-me {
+    text-decoration: underline;
+    text-align: center;
+    padding: 5px;
+}
+
+h5 {
+    text-align: center;
+}
+
+.about-me-container {
+    position: relative;
+    margin-top: 100px;
+    border-style: solid;
+    border-color: white;
+    padding: 10px;
+}
+
+.description {
+    line-height: 1.6;
+}
+

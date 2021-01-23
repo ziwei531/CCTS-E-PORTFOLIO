@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #viewpdf {  
+            height: 650px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="/Pictures/W.png"/>
+    <link rel="stylesheet" href="/CSS/something-i-am.css">
+
+    <!--Animate Css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/e2cb0c37b0.js"></script>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Something I Am!</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="center-align animate__animated animate__fadeInUp">
+                <img src="../Pictures/1wzw-01.png" id="logo" class="circle responsive-img" alt="">
+                <br>
+                <br>
+                <div class="navbar">
+                    
+                    <!-- Dropdown Structure -->
+                    <ul id="dropdown1" class="dropdown-content">
+                        <li><a href="#">Something I Am!</a></li>
+                        <li><a href="#">Design Your Own Country</a></li>
+                        <li><a href="#">Toy Design: Play and The Act of Play</a></li>
+                    </ul>
+
+                    <ul>
+                        <li><a href="index.html" class="nav">home</a></li>
+                        <li><a href="FIC-E-Portfolio.html" class="nav">FIC E-Portfolio</a></li>
+                        <li><a href="ccts-portfolio.html" class="nav dropdown-button" data-target="dropdown1">CCTS E-Portfolio<i class="fa fa-caret-down dropdown-logo"></i></a></li>
+                    </ul>
+                    <!-- <div class="dropdown-content">
+                        <ul id="dropdown1" class="dropdown-content">
+                            <li><a href="#">Something I Am!</a></li>
+                            <li><a href="#">Design Your Own Country</a></li>
+                            <li><a href="#">Toy Design: Play and The Act of Play</a></li>
+                        </ul>
+                    </div> -->
+                </div> 
+                <br>
+                <hr>
+                <br>
+                <!-- Main Content -->
+                <h1 class="header">Something I Am!</h1>
+                <p class="flow-text">My first assignment introduced me the concept of Design Thinking. It is a five-step process that consist of empathy, define, ideation, prototype, and presentation. Throughout this whole assignment process, I was constantly trying to improvise such as finding ways to further enhance my really bad drawings through utilizing the various other features that PowerPoint has to offer. Sometimes I would search the internet for certain effects and convert the backgrounds to become transparent and subsequently pasting it onto my rather dull stickman drawings in order to make it less dull looking. Although my final product is not very satisfactory, I have at least gained new wisdom in how to improve certain aspects of my future projects through what I have learned in design thinking.</p>
+                <div id="pdf"></div>
+                <div id="viewpdf"></div>
+                <br>
+                <a href="ccts-portfolio.html"><p class="left-align flow-text back-home">Back to CCTS Menu</p></a>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.4/pdfobject.min.js"></script>
+<script>
+    var viewpdf = $("#viewpdf");
+    PDFObject.embed("/PDFs/Assignment 1.pdf", viewpdf);
+</script>
+<script>
+    $(document).ready(function(){
+        $(".dropdown-button").dropdown( { hover: true });
+    })
+</script>
+</html>
