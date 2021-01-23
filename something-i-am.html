@@ -20,9 +20,6 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <title>Something I Am!</title>
@@ -38,23 +35,16 @@
                     
                     <!-- Dropdown Structure -->
                     <ul id="dropdown1" class="dropdown-content">
-                        <li><a href="#">Something I Am!</a></li>
-                        <li><a href="#">Design Your Own Country</a></li>
-                        <li><a href="#">Toy Design: Play and The Act of Play</a></li>
+                        <li><a class="white-text" href="something-i-am.html">Something I Am!</a></li>
+                        <li><a class="white-text" href="#">Design Your Own Country</a></li>
+                        <li><a class="white-text" href="#">Toy Design: Play and The Act of Play</a></li>
                     </ul>
 
                     <ul>
                         <li><a href="index.html" class="nav">home</a></li>
                         <li><a href="FIC-E-Portfolio.html" class="nav">FIC E-Portfolio</a></li>
-                        <li><a href="ccts-portfolio.html" class="nav dropdown-button" data-target="dropdown1">CCTS E-Portfolio<i class="fa fa-caret-down dropdown-logo"></i></a></li>
+                        <li><a href="ccts-portfolio.html" class="nav dropdown-trigger" data-target="dropdown1">CCTS E-Portfolio<i class="fa fa-caret-down dropdown-logo"></i></a></li>
                     </ul>
-                    <!-- <div class="dropdown-content">
-                        <ul id="dropdown1" class="dropdown-content">
-                            <li><a href="#">Something I Am!</a></li>
-                            <li><a href="#">Design Your Own Country</a></li>
-                            <li><a href="#">Toy Design: Play and The Act of Play</a></li>
-                        </ul>
-                    </div> -->
                 </div> 
                 <br>
                 <hr>
@@ -70,15 +60,33 @@
         </div>
     </div>
 </body>
+<!-- Jquery -->
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+<!-- PDF Object -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.4/pdfobject.min.js"></script>
+
+<!-- PDF Jquery Script-->
 <script>
     var viewpdf = $("#viewpdf");
     PDFObject.embed("/PDFs/Assignment 1.pdf", viewpdf);
 </script>
+
+<!-- Compiled and minified JavaScript for Materialize -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<!-- Dropdown Menu-->
 <script>
     $(document).ready(function(){
-        $(".dropdown-button").dropdown( { hover: true });
+        $(".dropdown-trigger").dropdown({
+            inDuration: 300,
+            outDuration: 225,
+            constrain_width: false, // Does not change width of dropdown to that of the activator
+            hover: true, // Activate on hover
+            gutter: 0, // Spacing from edge
+            belowOrigin: true, // Displays dropdown below the button
+            alignment: 'left' // Displays dropdown with edge aligned to the left of button
+        });
     })
 </script>
 </html>

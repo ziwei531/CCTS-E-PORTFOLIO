@@ -8,6 +8,14 @@
 
 /*navbar*/
 
+.navbar, .navbar li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+    overflow: hidden;
+}
+
 .nav {
     font-size: 2rem;
     padding: 1%;
@@ -40,6 +48,20 @@
 .nav:hover:after {
     transform: scaleX(1);
     transform-origin: left;
+}
+
+.dropdown-content a:hover{
+    background: rgb(82, 75, 75) !important;
+}
+
+.dropdown-content a{
+    background:  #1c1e21;
+    font: white;
+}
+
+.dropdown-logo {
+    position: relative;
+    margin-left: 10px;
 }
 
 .main-header{
@@ -86,3 +108,13 @@ h5 {
     line-height: 1.6;
 }
 
+/* bottom logo */
+#github {
+    color: #fff;
+    display: inline-flex;
+    vertical-align: top;
+}
+
+i:hover {
+    text-shadow: 0px 0px 15px white;
+}

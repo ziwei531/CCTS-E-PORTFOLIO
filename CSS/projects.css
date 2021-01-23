@@ -10,6 +10,31 @@
     line-height: 1.5;
 }
 
+/* dropdown-content*/
+.dropdown-content a:hover{
+    background: rgb(82, 75, 75) !important;
+}
+
+.dropdown-content a{
+    background:  #1c1e21;
+    font: white;
+}
+
+.dropdown-logo {
+    position: relative;
+    margin-left: 10px;
+}
+
+/*navbar*/
+
+.navbar, .navbar li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+    overflow: hidden;
+}
+
 .nav {
     font-size: 2rem;
     padding: 1%;

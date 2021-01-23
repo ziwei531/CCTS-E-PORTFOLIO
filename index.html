@@ -30,9 +30,19 @@
                     <br>
                     <br>
                     <div class="navbar">
-                        <a href="index.html" class="nav">home</a>
-                        <a href="FIC-E-Portfolio.html" class="nav">FIC E-Portfolio</a>
-                        <a href="ccts-portfolio.html" class="nav">CCTS E-Portfolio</a>
+                    
+                        <!-- Dropdown Structure -->
+                        <ul id="dropdown1" class="dropdown-content">
+                            <li><a class="white-text" href="something-i-am.html">Something I Am!</a></li>
+                            <li><a class="white-text" href="#">Design Your Own Country</a></li>
+                            <li><a class="white-text" href="#">Toy Design: Play and The Act of Play</a></li>
+                        </ul>
+    
+                        <ul>
+                            <li><a href="index.html" class="nav">home</a></li>
+                            <li><a href="FIC-E-Portfolio.html" class="nav">FIC E-Portfolio</a></li>
+                            <li><a href="ccts-portfolio.html" class="nav dropdown-trigger" data-target="dropdown1">CCTS E-Portfolio<i class="fa fa-caret-down dropdown-logo"></i></a></li>
+                        </ul>
                     </div> 
                     <h1 class="main-header">E-Portfolio Designed by Whoong Zi Wei</h1>
     
@@ -42,9 +52,35 @@
                         <h4 class="about-me">About Me</h4>
                         <h5 class="description">​Hi! My name is Whoong Zi Wei and I am a student from Taylor’s College currently studying in Foundation in Computing. I am highly passionate in learning various programming frameworks and I am also eagerly excited to discover more interesting concepts to further enlighten myself within the tech industry. My career goal would be either to become a web developer or a software engineer focusing mostly in algorithms.</h5>
                     </div>
+                    <br>
+                    <br>
+                    <p class="flow-text">@WhoongZiWei</p>
+                    <a target="_blank" href="https://www.facebook.com/whoong.ziwei/"><i class="medium material-icons white-text">facebook</i></a>
+                    <a target="_blank" href="https://github.com/ziwei531"><i id="github" class=" medium fab fa-github"></i></a>
                 </div>
             </div>
         </div>
     </div>
 </body>
+
+<!-- Jquery -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+<!-- Compiled and minified JavaScript for Materialize -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<!-- Dropdown Menu-->
+<script>
+    $(document).ready(function(){
+        $(".dropdown-trigger").dropdown({
+            inDuration: 300,
+            outDuration: 225,
+            constrain_width: false, // Does not change width of dropdown to that of the activator
+            hover: true, // Activate on hover
+            gutter: 0, // Spacing from edge
+            belowOrigin: true, // Displays dropdown below the button
+            alignment: 'left' // Displays dropdown with edge aligned to the left of button
+        });
+    })
+</script>
 </html>
