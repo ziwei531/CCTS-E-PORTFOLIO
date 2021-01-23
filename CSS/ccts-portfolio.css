@@ -87,6 +87,7 @@ h3:hover {
     border-style: solid;
     border-color:white;
 }
+
 @media screen and (max-width: 992px) {
     .header {
         font-size: 1.8rem;
