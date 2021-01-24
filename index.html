@@ -22,6 +22,13 @@
     <title>Home</title>
 </head>
 <body>
+    <!-- Mobile nav -->
+    <div id="mySidenav" class="sidenav">
+        <li><a class="white-text" href="ccts-portfolio.html">What is CCTS?</a></li>
+        <li><a class="white-text" href="something-i-am.html">Something I Am!</a></li>
+        <li><a class="white-text" href="#">Design Your Own Country</a></li>
+        <li><a class="white-text" href="#">Toy Design: Play and The Act of Play</a></li>
+    </div>
     <div class="container">
         <div class="valign-wrapper">
             <div class="row">
@@ -29,8 +36,7 @@
                     <img src="../Pictures/1wzw-01.png" id="logo" class="circle responsive-img" alt="">
                     <br>
                     <br>
-                    <div class="navbar">
-                    
+                    <div class="navbar col s12">
                         <!-- Dropdown Structure -->
                         <ul id="dropdown1" class="dropdown-content">
                             <li><a class="white-text" href="ccts-portfolio.html">What is CCTS?</a></li>
@@ -45,13 +51,14 @@
                             <li><a href="ccts-portfolio.html" class="nav dropdown-trigger" data-target="dropdown1">CCTS E-Portfolio<i class="fa fa-caret-down dropdown-logo"></i></a></li>
                         </ul>
                     </div> 
+
                     <h1 class="main-header">E-Portfolio Designed by Whoong Zi Wei</h1>
     
                     <!--About Me-->
                    
                     <div class="about-me-container">
-                        <h4 class="about-me">About Me</h4>
-                        <h5 class="description">​Hi! My name is Whoong Zi Wei and I am a student from Taylor’s College currently studying in Foundation in Computing. I am highly passionate in learning various programming frameworks and I am also eagerly excited to discover more interesting concepts to further enlighten myself within the tech industry. My career goal would be either to become a web developer or a software engineer focusing mostly in algorithms.</h5>
+                        <h4 class="about-me flow-text">About Me</h4>
+                        <h5 class="description flow-text">​Hi! My name is Whoong Zi Wei and I am a student from Taylor’s College currently studying in Foundation in Computing. I am highly passionate in learning various programming frameworks and I am also eagerly excited to discover more interesting concepts to further enlighten myself within the tech industry. My career goal would be either to become a web developer or a software engineer focusing mostly in algorithms.</h5>
                     </div>
                     <br>
                     <br>
@@ -82,6 +89,8 @@
             belowOrigin: true, // Displays dropdown below the button
             alignment: 'left' // Displays dropdown with edge aligned to the left of button
         });
+
+        $('.sidenav').sidenav();
     })
 </script>
 </html>
