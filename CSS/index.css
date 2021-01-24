@@ -130,9 +130,12 @@ i:hover {
 }      
 
 @media only screen and (max-width: 750px) {
-
+     /* hide the nav*/
+    .navbar a {
+        font-size: 1.1rem;
+    }
 }
 
 @media only screen and (min-width: 750px) {
-    /* hide the nav*/
+   
 }
