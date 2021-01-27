@@ -85,6 +85,10 @@
     animation-duration: 2s;
 }
 
+.description-text {
+    text-align: justify;
+}
+
 .dropdown-content a:hover{
     background: rgb(82, 75, 75) !important;
 }
