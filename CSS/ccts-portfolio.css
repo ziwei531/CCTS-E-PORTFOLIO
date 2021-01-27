@@ -6,6 +6,16 @@
     color: white;
 }
 
+/*Mobile Nav*/
+
+.medium {
+    font-size: 3rem !important;
+}
+
+#slide-out {
+    background-color: #1c1e21;
+}
+
 /*navbar*/
 
 .navbar, .navbar li {
@@ -92,4 +102,25 @@ h3:hover {
     .header {
         font-size: 1.8rem;
     }
+}
+
+@media only screen and (max-width: 750px) {
+    /* hide the nav*/
+    /*below code is a temporary solution. Please convert it to a hamburger menu in the future*/
+   .navbar {
+       display: none;
+   }
+}
+
+@media only screen and (max-width: 768px) {
+    .links {
+        font-size: 2rem !important;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+   .menu {
+       display: none !important;
+       font-size: 1.5rem !important;
+   }
 }

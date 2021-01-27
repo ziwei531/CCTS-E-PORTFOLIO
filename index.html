@@ -12,6 +12,9 @@
     <!--font awesome-->
     <script src="https://kit.fontawesome.com/e2cb0c37b0.js"></script>
 
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
@@ -22,19 +25,21 @@
     <title>Home</title>
 </head>
 <body>
-    <!-- Mobile nav -->
-    <div id="mySidenav" class="sidenav">
-        <li><a class="white-text" href="ccts-portfolio.html">What is CCTS?</a></li>
-        <li><a class="white-text" href="something-i-am.html">Something I Am!</a></li>
-        <li><a class="white-text" href="#">Design Your Own Country</a></li>
-        <li><a class="white-text" href="#">Toy Design: Play and The Act of Play</a></li>
-    </div>
+
+    <!-- Mobile Nav -->
+    <ul id="slide-out" class="sidenav">
+        <li><a class="white-text" href="index.html">HOME</a></li>
+        <li><a class="white-text" href="FIC-E-Portfolio.html">FIC E-Portfolio</a></li>
+        <li><a class="white-text" href="ccts-portfolio.html">CCTS E-Portfolio</a></li>
+    </ul>
+    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="medium material-icons menu">menu</i></a>
+    
+    <!-- Main Content -->
     <div class="container">
         <div class="valign-wrapper">
             <div class="row">
                 <div class="center-align animate__animated animate__fadeInUp">
                     <img src="../Pictures/1wzw-01.png" id="logo" class="circle responsive-img" alt="">
-                    <br>
                     <br>
                     <div class="navbar">
                         <!-- Dropdown Structure -->
@@ -48,7 +53,7 @@
                         <ul>
                             <li><a href="index.html" class="nav">home</a></li>
                             <li><a href="FIC-E-Portfolio.html" class="nav">FIC E-Portfolio</a></li>
-                            <li><a href="ccts-portfolio.html" class="nav dropdown-trigger" data-target="dropdown1">CCTS E-Portfolio<i class="fa fa-caret-down dropdown-logo"></i></a></li>
+                            <li><a href="ccts-portfolio.html" class="nav dropdown-trigger" data-target="dropdown1">CCTS E-Portfolio<i class="material-icons dropdown-logo">arrow_drop_down</i></a></li>
                         </ul>
                     </div> 
 
@@ -77,7 +82,7 @@
 <!-- Compiled and minified JavaScript for Materialize -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-<!-- Dropdown Menu-->
+<!-- Main Jquery-->
 <script>
     $(document).ready(function(){
         $(".dropdown-trigger").dropdown({
@@ -91,6 +96,7 @@
         });
 
         $('.sidenav').sidenav();
+
     })
 </script>
 </html>
