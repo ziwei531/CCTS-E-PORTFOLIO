@@ -27,7 +27,19 @@
     <ul id="slide-out" class="sidenav">
         <li><a class="white-text" href="index.html">HOME</a></li>
         <li><a class="white-text" href="FIC-E-Portfolio.html">FIC E-Portfolio</a></li>
-        <li><a class="white-text" href="ccts-portfolio.html">CCTS E-Portfolio</a></li>
+        <ul class="collapsible waves-effect waves-green ">
+            <li>
+                <a class="white-text position-this collapsible-header"> CCTS E-Portfolio </a>
+                <div class="collapsible-body">
+                    <ul>
+                        <li><a class="white-text" href="ccts-portfolio.html">What is CCTS?</a></li>
+                        <li><a class="white-text" href="something-i-am.html">Something I Am!</a></li>
+                        <li><a class="white-text" href="#">Design Your Own Country</a></li>
+                        <li><a class="white-text" href="#">Toy Design: Play and The Act of Play</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
     </ul>
     <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="medium material-icons menu">menu</i></a>
 
@@ -94,6 +106,7 @@
         });
         
         $('.sidenav').sidenav();
+        $('.collapsible').collapsible();
     })
 </script>
 </html>

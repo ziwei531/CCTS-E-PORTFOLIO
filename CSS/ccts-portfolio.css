@@ -16,6 +16,16 @@
     background-color: #1c1e21;
 }
 
+.position-this {
+    position: relative !important;
+    margin-left: 16px;
+}
+
+.collapsible-body ul li{
+    position: relative;
+    margin-left: 15px;
+}
+
 /*navbar*/
 
 .navbar, .navbar li {
