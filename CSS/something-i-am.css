@@ -70,11 +70,6 @@
     transform-origin: left;
 }
 
-.dropdown-logo {
-    position: relative;
-    margin-left: 10px;
-}
-
 #logo {
     width: 25vh;
     margin-top: 20px;
