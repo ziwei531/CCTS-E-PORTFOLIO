@@ -104,6 +104,17 @@
     animation-duration: 1s;
 }
 
+.outline {
+    border-style: solid;
+    border-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.outline-header {
+    font-weight: bold;
+}
+
 .project1 {
     position: relative;
 }
@@ -306,11 +317,14 @@ i:hover {
 
 
 @media only screen and (max-width: 750px) {
-    /* hide the nav*/
-    /*below code is a temporary solution. Please convert it to a hamburger menu in the future*/
    .navbar {
        display: none;
    }
+
+   .outline-header {
+       font-size: 1.6rem;
+   }
+
 }
 
 @media only screen and (min-width: 750px) {
