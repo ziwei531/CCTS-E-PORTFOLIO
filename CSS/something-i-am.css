@@ -114,6 +114,10 @@
        display: none;
    }
 
+   #hide-iframe {
+    display: none;
+   }
+
    .header {
        font-size: 2.5rem;
    }
@@ -123,5 +127,9 @@
    .menu {
        display: none !important;
        font-size: 1.5rem !important;
+   }
+
+   #hide-iframe2 {
+       display: none;
    }
 }
