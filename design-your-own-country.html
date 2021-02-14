@@ -1,16 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        #viewpdf {  
-            height: 650px;
-        }
-    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/png" href="/Pictures/W.png"/>
-    <link rel="stylesheet" href="/CSS/something-i-am.css">
-
     <!--Animate Css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
@@ -20,9 +12,13 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <title>Something I Am!</title>
+    <link rel="stylesheet" href="/CSS/design-your-own-country.css">
+    <title>Design Your Own Country</title>
 </head>
 <body>
     <!-- Mobile Nav -->
@@ -71,14 +67,14 @@
                 <hr>
                 <br>
                 <!-- Main Content -->
-                <h1 class="header">Something I Am!</h1>
-                <p class="flow-text description-text">My first assignment introduced me to the concept of Design Thinking. It is a five-step process that consist of empathy, define, ideation, prototype, and presentation. Throughout this whole assignment process, I was constantly trying to improvise such as finding ways to further enhance my really bad drawings through utilizing the various other features that PowerPoint has to offer. Sometimes I would search the internet for certain effects and convert the backgrounds to become transparent and subsequently pasting it onto my rather dull stickman drawings in order to make it less dull looking. Although my final product is not very satisfactory, I have at least gained new wisdom in how to improve certain aspects of my future projects through what I have learned in design thinking.</p>
+                <h1 class="header">Design Your Own Country</h1>
+                <p class="flow-text description-text">This is a group assignment that had me paired up with two other people to work together with. This assignment is similar to the first assignment as it requires my group to utilize the concept of design thinking in order to create our very own unique country. As we were only given two weeks to complete this assignment, it was quite a hectic process and we were constantly struggling to come up with ideas in order to create a unique and intriguing country. During the whole process, we were once again utilizing the concept of design thinking to its fullest potential in which I believed had further increased everyone’s exposure and understanding of the concept of design thinking. As a result, we were able to create a rather exceptional country. Although due to a tight deadline, the end result wasn’t really adequate enough in my opinion but at least it was satisfactory in terms of how we managed to fully utilized design thinking in order to complete our assignment and that I have gained more insights in how useful design thinking can be. </p>
 
                 <!-- For Desktop -->
-                <iframe id="hide-iframe" src="https://onedrive.live.com/embed?cid=D2227A7E1BD4640B&amp;resid=D2227A7E1BD4640B%2135171&amp;authkey=AJjP9Lf_d7wMD9k&amp;em=2&amp;wdAr=1.7777777777777777" width="1186px" height="691px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+                <iframe id="hide-iframe" src="https://onedrive.live.com/embed?cid=D2227A7E1BD4640B&amp;resid=D2227A7E1BD4640B%2135182&amp;authkey=ALcuali7tQAURsE&amp;em=2&amp;wdAr=1.7777777777777777" width="1186px" height="691px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
 
                 <!-- For Mobile -->
-                <iframe id="hide-iframe2" src="https://onedrive.live.com/embed?cid=D2227A7E1BD4640B&amp;resid=D2227A7E1BD4640B%2135171&amp;authkey=AJjP9Lf_d7wMD9k&amp;em=2&amp;wdAr=1.7777777777777777" width="350px" height="221px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+                <iframe id="hide-iframe2" src="https://onedrive.live.com/embed?cid=D2227A7E1BD4640B&amp;resid=D2227A7E1BD4640B%2135182&amp;authkey=ALcuali7tQAURsE&amp;em=2&amp;wdAr=1.7777777777777777" width="350px" height="221px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
                 
                 <br>
                 <a href="ccts-portfolio.html"><p class="left-align flow-text back-home">Back to CCTS Menu</p></a>
@@ -89,19 +85,10 @@
 <!-- Jquery -->
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
-<!-- PDF Object -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.4/pdfobject.min.js"></script>
-
-<!-- PDF Jquery Script-->
-<!-- <script>
-    var viewpdf = $("#viewpdf");
-    PDFObject.embed("/PDFs/Assignment 1.pdf", viewpdf);
-</script> -->
-
 <!-- Compiled and minified JavaScript for Materialize -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-<!-- Main Jquery-->
+<!-- Main Jquery -->
 <script>
     $(document).ready(function(){
         $(".dropdown-trigger").dropdown({
@@ -113,7 +100,7 @@
             belowOrigin: true, // Displays dropdown below the button
             alignment: 'left' // Displays dropdown with edge aligned to the left of button
         });
-
+        
         $('.sidenav').sidenav();
         $('.collapsible').collapsible();
     })
