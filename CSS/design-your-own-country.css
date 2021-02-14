@@ -90,6 +90,10 @@
     font: white;
 }
 
+.description-text {
+    text-align: justify;
+}
+
 @media only screen and (max-width: 750px) {
     /* hide the nav*/
     /*below code is a temporary solution. Please convert it to a hamburger menu in the future*/
