@@ -1,9 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 * {
     background-color: #1c1e21;
     font-family: 'Poppins', sans-serif;
     color: white;
+}
+
+.circle {
+    width: 15%;
+    border-radius: 50%;
+    background: #8dc7eb;
+    position: relative;
+    line-height: 0;
+    display: inline-block;
+}
+
+.circle::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.circle:hover {
+    background: #71a0bd;
+}
+
+.circle-content {
+    position: absolute;
+    bottom: 50%;
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+}
+
+hr {
+    border-style: none;
+    border-top-style: dashed;
+    border-width: 8px;
+    width: 30%;
+}
+
+.top-header {
+    font-family: "Geo", sans-serif;
+    font-size: 7rem  !important;
+    color: rgb(57, 125, 226);
+    text-shadow: white 0.04em 0.01em;
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.5rem;
+    font-weight: normal;
+    color: rgb(57, 125, 226);
+    padding-bottom: 10px;
+}
+
+.explore {
+    color:rgb(57, 125, 226);
 }
 
 #logo {
@@ -137,8 +194,22 @@ h5 {
     vertical-align: top;
 }
 
+.links {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+}
+
+.fic:hover, .ccts:hover {
+    text-shadow: 0px 0px 15px white;
+}
+
 .bot-icons:hover {
     text-shadow: 0px 0px 15px white;
+}
+
+.links {
+    border-style: solid;
+    border-color:white;
 }
 
 @media only screen and (max-width: 850px) { /*if screen is **blank** wide or less, execute the code below */
@@ -153,6 +224,14 @@ h5 {
     .navbar {
         display: none;
     }
+
+    h2 {
+        font-size: 2.5rem !important;
+    }
+
+    .top-header {
+        font-size: 5rem !important;
+    }
 }
 
 @media only screen and (min-width: 750px) {
@@ -162,4 +241,13 @@ h5 {
     }
 }
 
+@media only screen and (max-width: 768px) {
+    .portfolio-link {
+        font-size: 2rem !important;
+    }
+
+    .explore {
+        font-size: 2.5rem;
+    }
+}
 
