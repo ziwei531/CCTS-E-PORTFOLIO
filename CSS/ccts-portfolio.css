@@ -97,6 +97,7 @@
 .listed li {
     list-style-type: circle !important;
     margin-left: 25px;
+    line-height: 1.7;
 }
 
 h3:hover {
