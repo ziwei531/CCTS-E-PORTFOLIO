@@ -104,9 +104,13 @@
     position: relative;
     border-style: solid;
     border-color: white;
-    padding: 20px;
+    margin-bottom: 25px;
+    padding: 10px;
 }
 
+.final-thought {
+    text-decoration: underline;
+}
 @media screen and (max-width: 992px) {
     .header {
         font-size: 1.8rem;
