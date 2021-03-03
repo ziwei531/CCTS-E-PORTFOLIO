@@ -94,6 +94,13 @@
     text-decoration: underline;
 }
 
+.school {
+    position: relative;
+    top: 50px;
+    display: inline-block;
+    font-size: 8rem !important;
+}
+
 .listed li {
     list-style-type: circle !important;
     margin-left: 25px;
@@ -111,6 +118,7 @@
 .final-thought {
     text-decoration: underline;
 }
+
 @media screen and (max-width: 992px) {
     .header {
         font-size: 1.8rem;
@@ -122,6 +130,10 @@
     /*below code is a temporary solution. Please convert it to a hamburger menu in the future*/
    .navbar {
        display: none;
+   }
+   
+   .school {
+       font-size: 6rem !important;
    }
 }
 
