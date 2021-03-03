@@ -90,6 +90,12 @@
     animation-duration: 2s;
 }
 
+.psychology {
+    position: relative;
+    top: 50px;
+    font-size: 10rem !important;
+}
+
 .header {
     text-decoration: underline;
 }
@@ -120,6 +126,10 @@ h3:hover {
     /*below code is a temporary solution. Please convert it to a hamburger menu in the future*/
    .navbar {
        display: none;
+   }
+
+   .psychology {
+       font-size: 6rem !important;
    }
 }
 
