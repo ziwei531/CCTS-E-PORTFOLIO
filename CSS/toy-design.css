@@ -104,6 +104,14 @@
     top: 50px;
 }
 
+.back-home {
+    text-decoration: underline;
+}
+
+.back-home:hover {
+    text-shadow: 0px 0px 15px white;
+}
+
 @media screen and (max-width: 992px) {
     .header {
         font-size: 1.8rem;
@@ -142,7 +150,6 @@
        display: none !important;
        font-size: 1.5rem !important;
    }
-
    
    #hide-iframe2 {
     display: none;
