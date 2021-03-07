@@ -168,11 +168,19 @@ h5 {
     text-align: center;
 }
 
-.circular-portrait img {
-    width: 300px;
-    height: 300px;
+.circular-portrait{ 
+    width: 350px;
+    height: 350px;
     position: relative;
+    border-radius: 50%;
+    display: inline-block;
+    overflow: hidden;
     top: 10px;
+}
+.circular-portrait img {
+    width: auto;
+    height: 100%;
+    margin-top: -10%;
 }
 .about-me-container {
     position: relative;
