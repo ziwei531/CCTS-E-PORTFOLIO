@@ -5,6 +5,6 @@ This is a portfolio website made when I was back in Foundation in Computing for 
 However, this demonstrated just how much I've progressed with my HTML and CSS were in just one semester worth of time to learn it in addition to being busy with 4 other subjects. 
 
 # Shortcomings
-Understandably, there are WAY TOO MANY text especially on the home page. Well, beginners make mistakes. In the subsequent years of me learning the basics of frontend designing, I am much more experienced in ensuring website friendliness is always achieved. 
+Understandably, there are WAY TOO MANY text especially on the home page. Well, beginners make mistakes. In the subsequent years of me learning the basics of frontend designing, I am much more experienced in ensuring froned application's user-friendliness is always achieved. 
 
 Link to [Site](https://whoongziwei-ccts.netlify.app)
